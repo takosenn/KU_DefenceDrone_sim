@@ -22,7 +22,7 @@ Params: dict[str, Any] = {
 
     # --- 制御パラメータ ---
     "agent_speed_max": 6,  # エージェントの最大速度[m/s]
-    "agent_speed_max_values": [8.5,7],  # 円形フォーメーション時の各エージェントの最大速度[m/s]
+    "agent_speed_max_values": [7,7],  # 円形フォーメーション時の各エージェントの最大速度[m/s]
     "omega_history_size": 1,  # エージェントの角速度履歴サイズ
     "R": 4,  # targetとAgentの理想の距離(フォーメーションの半径)[m]
     "Omega": 0.5,  # Agentの理想角速度[rad/s]
