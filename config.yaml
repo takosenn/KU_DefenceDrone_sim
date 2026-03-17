@@ -1,0 +1,21 @@
+# 複数のパラメータ設定を定義するYAMLファイル
+# 各実験設定には名前と実行するパラメータを指定します
+
+experiments:
+  # パラメータスイープ: omega_valuesとl2の全組み合わせ（6×5=30回）
+  - name_template: "agent_speed_max_{agent_speed_max}_omega_{omega_values}"
+    parameter_sweep:
+      agent_speed_max: [0.5,0.7,0.9,1.1]
+      omega_values: [[0.15,0.15]]
+      l2: [1,1.2,1.5,1.8,2]
+    fixed_parameters:
+      frames: 2400
+      frame_time: 0.05
+      save_csv: true
+
+# 実験実行の設定
+execution:
+  # 各実験の間にCoppeliaSimを再起動するかどうか
+  restart_between_experiments: true
+  # 実験間の待機時間（秒）
+  wait_between_experiments: 5
