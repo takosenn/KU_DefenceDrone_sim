@@ -156,7 +156,7 @@ u_theta = (ω_i + Ω + f_i) * η_i + z_i * ρ_i + l2 * sign(f_i + Ω - ω_i)
 
 `うまく収束する値調整.txt` より（理想相対距離 R=4 固定）：
 
-- **目標角速度 0.2 rad/s**: `agent_speed_max=8.5`, `l2=2.5`, `omega_history_size=1`
+- **目標角速度 0.2 rad/s**: `agent_speed_max=8.5`, `l2=1.5`, `omega_history_size=1`
 - **目標角速度 0.15 rad/s**: `agent_speed_max=7`, `l2=1.5`, `omega_history_size=1`
 
 ---
